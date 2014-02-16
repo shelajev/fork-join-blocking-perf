@@ -4,3 +4,8 @@
 *.jar
 *.war
 *.ear
+.idea
+target
+fork-join-blocking-perf.iml
+queue.gif
+results-summary.txt
