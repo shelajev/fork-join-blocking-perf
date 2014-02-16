@@ -42,7 +42,7 @@ public class MyBenchmark {
 
   @State(Scope.Thread)
   public static class ForkJoinBenchmarkTask {
-    long N = Long.getLong("tasks");
+    long N = Long.getLong("tasks", 1024);
     ForkJoinTask<Long> recursiveTask = new RecursiveForkJoinTask(N);
     ForkJoinTask<Long> recursiveBlockingTask = new RecursiveBlockingForkJoinTask(N);
   }
